@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global Assistance Request for a Struggling Ill Individual — Reaching Kind-Hearted and Generous People Who Can Make a Real Difference</title>
+  <meta name="description" content="A sincere request for global assistance to help a struggling ill individual in urgent need of support for medical care and basic living conditions." />
+  <meta name="keywords" content="financial help, medical assistance, living expenses, donate, cryptocurrency donation, support request" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #222;
+    }
+    h1 { font-size: 26px; margin-bottom: 10px; }
+    p { margin: 0 0 14px; }
+    .crypto-box {
+      background: #fff;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+    .crypto-box b { display:block; margin-bottom:6px; }
+    .copy-btn {
+      margin-top:8px;
+      padding:6px 10px;
+      background:#333;
+      color:#fff;
+      border:none;
+      border-radius:4px;
+      cursor:pointer;
+    }
+    .copy-btn:active{ transform:translateY(1px); }
+    .share-btn {
+      background: #0077ff;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 6px;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 18px;
+    }
+    .note { font-size: 14px; color:#444; margin-top:16px; }
+  </style>
+</head>
+<body>
+
+<h1>Global Assistance Request for a Struggling Ill Individual — Reaching Kind-Hearted and Generous People Who Can Make a Real Difference</h1>
+
+<p>Hello to every kind soul who believes that compassion can change someone’s life.</p>
+
+<p>I am a middle-aged man living with a chronic health condition that requires constant medical care. Because of my illness I rely on daily medication simply to stay stable. Over the past years my situation has become harder than I ever imagined. I am currently living alone in extremely difficult circumstances, trying to survive day by day while hoping for a chance to rebuild a simple and safe life.</p>
+
+<p>I reach out with humility, hoping these words will reach people whose hearts are open—people who understand how even a small act of generosity can lift someone out of deep hardship.</p>
+
+<p>For anyone who is able, <strong>even a very small amount — as little as half a dollar — can help</strong> with essentials such as medication and safer shelter. Every bit of support brings me one step closer to standing on my own feet again.</p>
+
+<h2>Crypto Addresses</h2>
+
+<div class="crypto-box">
+  <b>Bitcoin (BTC):</b>
+  <span id="btc">bc1q0p4asr64m3y9pszusclefztsw98qux4lfrjm8v</span><br>
+  <button class="copy-btn" onclick="copyText('btc')">Copy</button>
+</div>
+
+<div class="crypto-box">
+  <b>Tron (TRX):</b>
+  <span id="trx">TQf8WwF9WJZzFJk1zFJk1zFJk1zFJk1zFJ</span><br>
+  <button class="copy-btn" onclick="copyText('trx')">Copy</button>
+</div>
+
+<div class="crypto-box">
+  <b>Solana (SOL):</b>
+  <span id="sol">6vF9WwF9WJZzFJk1zFJk1zFJk1zFJk1zFJ</span><br>
+  <button class="copy-btn" onclick="copyText('sol')">Copy</button>
+</div>
+
+<div class="crypto-box">
+  <b>Litecoin (LTC):</b>
+  <span id="ltc">ltc1q96evumjdj32h4lqy472xw5d36hkemrpncp2aeh</span><br>
+  <button class="copy-btn" onclick="copyText('ltc')">Copy</button>
+</div>
+
+<p class="note">If you cannot donate, <strong>sharing this page</strong> would still be a great kindness — it may reach someone who can help. A single share can change everything.</p>
+
+<a href="#" class="share-btn" onclick="sharePage()">Share This Page</a>
+
+<p style="margin-top:18px;">From my heart, I pray that everyone who considers helping — in any way — receives peace, health, and blessings for themselves and their loved ones. Thank you for taking a moment to read this request.</p>
+
+<script>
+  function copyText(id){
+    const t = document.getElementById(id).innerText;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(t).then(()=> alert('Address copied to clipboard.'));
+    } else {
+      // fallback
+      const ta = document.createElement('textarea');
+      ta.value = t;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); alert('Address copied to clipboard.'); } catch(e){ alert('Copy failed.'); }
+      ta.remove();
+    }
+  }
+
+  function sharePage(){
+    if (navigator.share) {
+      navigator.share({ title: document.title, text: "Please consider reading this request.", url: window.location.href })
+        .catch(()=>{/* ignore */});
+    } else {
+      // fallback: copy URL
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(window.location.href).then(()=> alert('Page URL copied to clipboard.'));
+      } else {
+        alert('Sharing not supported. You can copy the page URL manually.');
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
